@@ -18,3 +18,8 @@ npm i react-icons
 ### Group
 
 - If i want to hover over a button we want to move the arrow as well so we need to create the group as well in te button and mention in the span element as well.
+
+### Grids
+
+- Exploring grids as well so first of all we create a div and initialize the grid class in it as it is the main div therefore after it we will going to apply the class of the grid-cols-2 -- if we wanted 2 coloums in the same grid now we can create the div in the main div to apply all of these things,
+  the main reason to create is to define the structure for us.
