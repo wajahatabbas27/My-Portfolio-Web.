@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  //setting it to false when ever the button is called to show the cross button
   const handleclick = () => setNav(!nav);
 
   return (
@@ -25,7 +33,7 @@ const Navbar = () => {
 
       {/* responsive bars icon button for smaller screens like mobile */}
       <div onClick={handleclick} className='md:hidden z-10'>
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
       </div>
 
       {/* mobile menu */}
@@ -44,8 +52,43 @@ const Navbar = () => {
         <li className='py-6 text-4xl'>Contact</li>
       </ul>
 
-      {/* social icons */}
-      <div className='hidden'></div>
+      {/* social icons are hidden will only show up when the screen greater than large */}
+      <div className='hidden lg:flex flex-col fixed left-0 top-[35%]'>
+        <ul>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+            <a
+              href='/'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+            <a
+              href='/'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+            <a
+              href='/'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Mail <HiOutlineMail size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-b from-[#405DE6] to-[#F77737] via-[#C13584]'>
+            <a
+              href='/'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Instagram <FaInstagram size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
