@@ -46,3 +46,9 @@ npm i react-icons
 ## Using ASCII code for forward slash to deploy
 
 - &#047 - code for the forward slash to remove the warning
+
+## overflow-x
+
+- whenever the screen is moving horizontally because of the animation, therefore we use the property overflow , as its horizontally so we use the property overflow -x : hidden;
+
+- to hidden makes it set all the way.

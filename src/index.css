@@ -16,6 +16,10 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,4 +33,37 @@
     rgba(112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
   ) !important;
+}
+
+.skillBackground {
+  animation: appearSkill 5s ease-in infinite;
+}
+.nameBackground {
+  animation: appear 2s ease-in forwards;
+}
+
+/* Animations using key frames */
+@keyframes appear {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearSkill {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(150px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

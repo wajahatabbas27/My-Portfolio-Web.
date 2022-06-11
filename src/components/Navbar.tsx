@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/main-logo.gif";
 import {
   FaBars,
   FaTimes,
@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='fixed w-full h-[100px] bg-[#0a192f] flex items-center justify-between px-4 text-gray-300'>
       {/* Logo */}
       <div>
-        <img src={Logo} alt='logo of the portfolio' className='w-[50px]' />
+        <img src={Logo} alt='logo of the portfolio' className='w-[80px]' />
       </div>
 
       {/* Menu */}
