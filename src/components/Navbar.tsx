@@ -98,7 +98,9 @@ const Navbar = () => {
         <ul>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
-              href='/'
+              href='https://www.linkedin.com/in/wajahat-abbas-084352194/'
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
               Linkedin <FaLinkedin size={30} />
@@ -106,7 +108,9 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
-              href='/'
+              href='https://github.com/wajahatabbas27'
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
               Github <FaGithub size={30} />
@@ -114,7 +118,9 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
-              href='/'
+              href='https://mail.google.com/mail/u/0/#inbox'
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
               Mail <HiOutlineMail size={30} />
@@ -122,7 +128,9 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-b from-[#405DE6] to-[#F77737] via-[#C13584]'>
             <a
-              href='/'
+              href='https://www.instagram.com/wajahatabbas_/'
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
               Instagram <FaInstagram size={30} />
