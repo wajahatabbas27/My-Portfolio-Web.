@@ -59,7 +59,7 @@ body {
     opacity: 0;
   }
   50% {
-    transform: translateX(150px);
+    transform: translateX(60px);
     opacity: 0.5;
   }
   100% {
