@@ -18,7 +18,9 @@ const Skills = () => {
           <p className='text-4xl font-bold border-b-4 border-pink-600 inline  '>
             Skills
           </p>
-          <p className='py-4'>// These are the technologies I've worked with</p>
+          <p className='py-4'>
+            &#047;&#047; These are the technologies I've worked with
+          </p>
         </div>
 
         {/* images div */}

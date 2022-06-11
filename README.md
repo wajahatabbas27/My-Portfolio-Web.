@@ -42,3 +42,7 @@ npm i react-icons
 - It is a good service where we can be updated of everything through the gmail and also in the inbox of the getform account which we created .
 
 - All we have to do is just to paste the url of the http provided by getform.io in the form attribute as well as the method="POST" as its POST request.
+
+## Using ASCII code for forward slash to deploy
+
+- &#047 - code for the forward slash to remove the warning
