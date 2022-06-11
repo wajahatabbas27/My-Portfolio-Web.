@@ -31,3 +31,14 @@ npm i react-icons
 ### inline
 
 - inline se jo elements hain wahin rahega kuch bhi style jo lagaya hoga hmne jese underline
+
+### focus
+
+- focus:outline-0 -- isse hoga yh ke jb click kreinge to outline nazar nhi aegi
+
+## GET-FORM.io
+
+- using the get form.io when ever a user submits a form, data is received on the inbox of gmail and it is connected to getform.io.
+- It is a good service where we can be updated of everything through the gmail and also in the inbox of the getform account which we created .
+
+- All we have to do is just to paste the url of the http provided by getform.io in the form attribute as well as the method="POST" as its POST request.
