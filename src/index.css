@@ -9,7 +9,7 @@
 @layer base {
   body {
     @apply font-[Raleway];
-    @apply overflow-x-hidden;
+    /* @apply overflow-x-hidden; */
   }
   li {
     @apply px-4;
@@ -18,6 +18,10 @@
 }
 
 body {
+  overflow-x: hidden;
+}
+
+html {
   overflow-x: hidden;
 }
 
