@@ -16,11 +16,15 @@ const Navbar = () => {
   const handleclick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[100px] bg-[#0a192f] flex items-center justify-between px-4 text-gray-300 z-50'>
+    <div className='fixed w-full h-[100px] bg-[#0a192f] flex items-center justify-between px-4 text-gray-300 z-50 '>
       {/* Logo */}
       <div>
         <Link to='home' smooth={true} duration={500}>
-          <img src={Logo} alt='logo of the portfolio' className='w-[80px]' />
+          <img
+            src={Logo}
+            alt='logo of the portfolio'
+            className='w-[80px] cursor-pointer '
+          />
         </Link>
       </div>
 
