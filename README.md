@@ -1,5 +1,7 @@
 # CREATING MY PORTFOLIO WEBSITE!
 
+https://tech-iz.netlify.app/
+
 <!-- installing react icons -->
 
 npm i react-icons
