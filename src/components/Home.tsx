@@ -1,7 +1,21 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Home = () => {
+  const [text] = useTypewriter({
+    words: [
+      `Hi, Development Environment Created, Come On!`,
+      "Let's Code Boy!",
+      "Guy-who-loves-Coffee.tsx",
+      "<ButLovesToCodeHere/>",
+      "Jack Of All Trades!!!",
+      "Modern FullStack/Serverless Developer",
+    ],
+    loop: true,
+    delaySpeed: 1800,
+  });
+
   return (
     <div
       id='home'
@@ -14,7 +28,8 @@ const Home = () => {
           Wajahat Abbas
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] skillBackground'>
-          I'm a Modern Full Stack & AWS Serverless Developer.
+          {text}
+          <Cursor cursorColor='#FF1493' />
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
           I'm a full-stack developer specializing in building (and occasionally

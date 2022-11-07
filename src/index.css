@@ -41,9 +41,9 @@ html {
   ) !important;
 }
 
-.skillBackground {
+/* .skillBackground {
   animation: appearSkill 5s ease-in infinite;
-}
+} */
 .nameBackground {
   animation: appear 2s ease-in forwards;
 }
