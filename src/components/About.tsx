@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,16 +15,28 @@ const About = () => {
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
-            <p>Hi, I'm Wajahat, nice to meet you. Please take a look around.</p>
+            <motion.p
+              initial={{ x: -400, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
+            >
+              Hi, I'm Wajahat, nice to meet you. Please take a look around.
+            </motion.p>
           </div>
           <div>
-            <p>
+            <motion.p
+              initial={{ x: 400, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
+            >
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software
               for clients ranging from individuals and small-businesses all the
               way to large enterprise corporations. What would you do if you had
               a software expert available at your fingertips?
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

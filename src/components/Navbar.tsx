@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/main-logo.gif";
+import { motion } from "framer-motion";
 import {
   FaBars,
   FaTimes,
@@ -18,7 +19,11 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[100px] bg-[#0a192f] flex items-center justify-between px-4 text-gray-300 z-50 '>
       {/* Logo */}
-      <div>
+      <motion.div
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+      >
         <Link to='home' smooth={true} duration={500}>
           <img
             src={Logo}
@@ -26,11 +31,16 @@ const Navbar = () => {
             className='w-[80px] cursor-pointer '
           />
         </Link>
-      </div>
+      </motion.div>
 
       {/* Menu */}
 
-      <ul className='hidden md:flex'>
+      <motion.ul
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className='hidden md:flex'
+      >
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
@@ -56,7 +66,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-      </ul>
+      </motion.ul>
 
       {/* responsive bars icon button for smaller screens like mobile */}
       <div onClick={handleclick} className='md:hidden z-10'>

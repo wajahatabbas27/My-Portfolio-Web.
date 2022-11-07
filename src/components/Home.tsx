@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -23,8 +24,16 @@ const Home = () => {
     >
       {/* Container */}
       <div className='max-w-[1000px] h-full mx-auto px-8 flex flex-col justify-center '>
-        <p className='text-pink-600'>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] nameBackground'>
+        <motion.p
+          initial={{ y: -500, opacity: 0.5, scale: 0.5 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2.5 }}
+          className='text-pink-600'
+        >
+          Hi, my name is
+        </motion.p>
+        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] nameBackground animate-spin'>
           Wajahat Abbas
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] skillBackground'>
@@ -37,12 +46,18 @@ const Home = () => {
           building responsive full-stack web applications.
         </p>
         <div>
-          <button className='group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+          <motion.button
+            initial={{ x: -500, opacity: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2 }}
+            className='group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'
+          >
             View Work{" "}
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight size={20} className='ml-3' />
             </span>
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

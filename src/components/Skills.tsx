@@ -8,6 +8,7 @@ import NODE from "../assets/node.png";
 import AWS from "../assets/aws.png";
 import GITHUB from "../assets/github.png";
 import MONGO from "../assets/mongo.png";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -27,7 +28,13 @@ const Skills = () => {
         </div>
 
         {/* images div */}
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+        <motion.div
+          initial={{ x: 500, opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, x: 0 , scale:1}}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+          className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'
+        >
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img src={HTML} alt='html icon' className='w-20 mx-auto' />
             <p className='my-4'>HTML</p>
@@ -64,7 +71,7 @@ const Skills = () => {
             <img src={AWS} alt='aws icon' className='w-20 mx-auto' />
             <p className='my-4'>AWS</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

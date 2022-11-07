@@ -4,6 +4,7 @@ import Youtubeclone from "../assets/projectsImages/youtubeclone.png";
 import GymFitness from "../assets/projectsImages/gymFitness.png";
 import GithubFinder from "../assets/projectsImages/githubFinder.png";
 import ExpenseTracker from "../assets/projectsImages/expenseTracker.png";
+import { motion } from "framer-motion";
 
 const Work = () => {
   return (
@@ -20,7 +21,13 @@ const Work = () => {
         </div>
 
         {/* projects showcasing portfolio*/}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+        <motion.div
+          initial={{ x: -500, opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+          className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'
+        >
           {/* Grid item   */}
           <div
             style={{ backgroundImage: `url(${Social})` }}
@@ -214,7 +221,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
