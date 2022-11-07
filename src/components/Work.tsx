@@ -1,6 +1,9 @@
-import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
-import RealState from "../assets/realestate.jpg";
+import Social from "../assets/projectsImages/social.png";
+import Covid from "../assets/projectsImages/covid.png";
+import Youtubeclone from "../assets/projectsImages/youtubeclone.png";
+import GymFitness from "../assets/projectsImages/gymFitness.png";
+import GithubFinder from "../assets/projectsImages/githubFinder.png";
+import ExpenseTracker from "../assets/projectsImages/expenseTracker.png";
 
 const Work = () => {
   return (
@@ -20,21 +23,30 @@ const Work = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {/* Grid item   */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Social})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
+            {/* Social App */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                IZ Social Application
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  href='https://iz-social-app.netlify.app/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  href='https://github.com/wajahatabbas27/IZ-Social-Media-Platform-Frontend'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -42,22 +54,31 @@ const Work = () => {
               </div>
             </div>
           </div>{" "}
+          {/* Covid tracker */}
           <div
-            style={{ backgroundImage: `url(${RealState})` }}
+            style={{ backgroundImage: `url(${Covid})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                COVID-19 Tracker App
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  href='http://covid-tracker-by-wajahat-abbas.surge.sh/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  href='https://github.com/wajahatabbas27/Covid-19-Tracker'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -65,22 +86,31 @@ const Work = () => {
               </div>
             </div>
           </div>
+          {/* Youtube Clone */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Youtubeclone})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                Youtube Clone
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://clone-b9180.web.app/'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/wajahatabbas27/Youtube-Clone'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -88,22 +118,31 @@ const Work = () => {
               </div>
             </div>
           </div>{" "}
+          {/* Gym Fitness Application */}
           <div
-            style={{ backgroundImage: `url(${RealState})` }}
+            style={{ backgroundImage: `url(${GymFitness})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                Gym Fitness App
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://wajahats-fitness-gym.netlify.app/'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/wajahatabbas27/Gym-Fitness-Application'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -111,22 +150,31 @@ const Work = () => {
               </div>
             </div>
           </div>
+          {/* github Finder */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${GithubFinder})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                Github Finder Application
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  href='https://githubfinder-az.netlify.app/user/wajahatabbas27'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  href='https://github.com/wajahatabbas27/Github-Finder'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -135,21 +183,30 @@ const Work = () => {
             </div>
           </div>{" "}
           <div
-            style={{ backgroundImage: `url(${RealState})` }}
+            style={{ backgroundImage: `url(${ExpenseTracker})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
+            {/* Expense Tracker */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                Expense Tracker App
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='http://expense-tracker-app-by-wajahatabbas.surge.sh/'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/wajahatabbas27/React-Expense-Tracker-App'
+                >
                   <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
