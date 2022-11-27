@@ -4,6 +4,7 @@ import Youtubeclone from "../assets/projectsImages/youtubeclone.png";
 import GymFitness from "../assets/projectsImages/gymFitness.png";
 import GithubFinder from "../assets/projectsImages/githubFinder.png";
 import ExpenseTracker from "../assets/projectsImages/expenseTracker.png";
+import izCommerce from "../assets/projectsImages/izCommerce.png";
 
 const Work = () => {
   return (
@@ -22,12 +23,44 @@ const Work = () => {
         {/* projects showcasing portfolio*/}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {/* Grid item   */}
+          {/* IZ Commerce 2.o */}
+          <div
+            style={{ backgroundImage: `url(${izCommerce})` }}
+            className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
+          >
+            {/* Hover Effects */}{" "}
+            <div className='opacity-0 hover:opacity-100'>
+              <span className='text-2xl font-bold text-white tracking-wider'>
+                IZ Commerce 2.0
+              </span>
+              <div className='pt-8 text-center'>
+                <a
+                  href='https://iz-commerce.vercel.app/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href='https://github.com/wajahatabbas27/Amazon-2.0-E-commerce'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>{" "}
+          {/* Social App */}
           <div
             style={{ backgroundImage: `url(${Social})` }}
             className='shadow-lg shadow-[#040c16] flex justify-center items-center group container rounded-md mx-auto content-div'
           >
             {/* Hover Effects */}
-            {/* Social App */}
             <div className='opacity-0 hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
                 IZ Social Application
