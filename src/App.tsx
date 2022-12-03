@@ -8,7 +8,7 @@ import Work from "./components/Work";
 
 const App = () => {
   return (
-    <div>
+    <div className='scroll-smooth  scrollbar-track-pink-600/20 scrollbar-thumb-pink-600/80 scrollbar-thin'>
       <Navbar />
       <Home />
       <About />
