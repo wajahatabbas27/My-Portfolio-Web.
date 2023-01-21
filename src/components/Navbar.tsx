@@ -114,7 +114,7 @@ const Navbar = () => {
         <ul>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
-              href='https://www.linkedin.com/in/wajahat-abbas-084352194/'
+              href='https://www.linkedin.com/in/wajahatabbas27/'
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
