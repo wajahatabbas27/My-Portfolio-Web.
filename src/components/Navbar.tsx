@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../assets/main-logo.gif";
+// import Logo from "../assets/logo/main-logo.gif";
+import Logo from "../assets/logo/iz.gif";
 import { motion } from "framer-motion";
 import {
   FaBars,
